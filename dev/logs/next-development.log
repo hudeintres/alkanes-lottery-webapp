@@ -1,0 +1,212 @@
+[00:00:00.961] Server  LOG      ✓ Ready in 740ms
+[00:00:09.793] Server  ERROR    ⨯ ./contexts/WalletContext.tsx:4:1
+Export LaserEyesProvider doesn't exist in target module
+  2 |
+  3 | import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+> 4 | import { LaserEyesProvider, useLaserEyes } from '@omnisat/lasereyes-core';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface WalletContextType {
+  7 |   isConnected: boolean;
+
+The export LaserEyesProvider was not found in module [project]/node_modules/@omnisat/lasereyes-core/dist/index.js [app-client] (ecmascript).
+Did you mean to import LaserEyesClient?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./contexts/WalletContext.tsx
+    ./app/layout.tsx
+
+  Client Component Browser:
+    ./contexts/WalletContext.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./contexts/WalletContext.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+
+
+./contexts/WalletContext.tsx:4:1
+Export LaserEyesProvider doesn't exist in target module
+  2 |
+  3 | import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+> 4 | import { LaserEyesProvider, useLaserEyes } from '@omnisat/lasereyes-core';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface WalletContextType {
+  7 |   isConnected: boolean;
+
+The export LaserEyesProvider was not found in module [project]/node_modules/@omnisat/lasereyes-core/dist/index.js [app-ssr] (ecmascript).
+Did you mean to import LaserEyesClient?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./contexts/WalletContext.tsx
+    ./app/layout.tsx
+
+  Client Component Browser:
+    ./contexts/WalletContext.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./contexts/WalletContext.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+
+
+./contexts/WalletContext.tsx:4:1
+Export useLaserEyes doesn't exist in target module
+  2 |
+  3 | import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+> 4 | import { LaserEyesProvider, useLaserEyes } from '@omnisat/lasereyes-core';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface WalletContextType {
+  7 |   isConnected: boolean;
+
+The export useLaserEyes was not found in module [project]/node_modules/@omnisat/lasereyes-core/dist/index.js [app-client] (ecmascript).
+Did you mean to import LaserEyesClient?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./contexts/WalletContext.tsx
+    ./app/layout.tsx
+
+  Client Component Browser:
+    ./contexts/WalletContext.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./contexts/WalletContext.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+
+
+./contexts/WalletContext.tsx:4:1
+Export useLaserEyes doesn't exist in target module
+  2 |
+  3 | import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+> 4 | import { LaserEyesProvider, useLaserEyes } from '@omnisat/lasereyes-core';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface WalletContextType {
+  7 |   isConnected: boolean;
+
+The export useLaserEyes was not found in module [project]/node_modules/@omnisat/lasereyes-core/dist/index.js [app-ssr] (ecmascript).
+Did you mean to import LaserEyesClient?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./contexts/WalletContext.tsx
+    ./app/layout.tsx
+
+  Client Component Browser:
+    ./contexts/WalletContext.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./contexts/WalletContext.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+
+[00:01:45.162] Server  ERROR    ⨯ ./contexts/WalletContext.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+> 4 | import LaserEyesProvider from '@omnisat/lasereyes-react';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useClient } from '@omnisat/lasereyes-react';
+  6 | import { useAccount } from '@omnisat/lasereyes-react';
+  7 | import { useBalance } from '@omnisat/lasereyes-react';
+
+The export default was not found in module [project]/node_modules/@omnisat/lasereyes-react/dist/index.js [app-client] (ecmascript).
+Did you mean to import useClient?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./contexts/WalletContext.tsx
+    ./app/layout.tsx
+
+  Client Component Browser:
+    ./contexts/WalletContext.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./contexts/WalletContext.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+
+
+./contexts/WalletContext.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+> 4 | import LaserEyesProvider from '@omnisat/lasereyes-react';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useClient } from '@omnisat/lasereyes-react';
+  6 | import { useAccount } from '@omnisat/lasereyes-react';
+  7 | import { useBalance } from '@omnisat/lasereyes-react';
+
+The export default was not found in module [project]/node_modules/@omnisat/lasereyes-react/dist/index.js [app-ssr] (ecmascript).
+Did you mean to import useClient?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Server Component:
+    ./contexts/WalletContext.tsx
+    ./app/layout.tsx
+
+  Client Component Browser:
+    ./contexts/WalletContext.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Client Component Browser]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./contexts/WalletContext.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Client Component SSR]
+    ./components/Navbar.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+
+[00:01:57.673] Server  LOG      ✓ Compiled in 584ms
+[00:02:06.964] Server  LOG      ✓ Compiled in 51ms
+[00:02:21.807] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'push')
+[00:02:41.010] Server  LOG      ✓ Compiled in 47ms
+[00:04:49.431] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:30.949] Browser LOG     Wallet connected successfully!
+[00:05:33.781] Browser LOG     Wallet disconnected
+[00:06:04.683] Browser LOG     Wallet connected successfully!
+[00:06:07.218] Browser LOG     Wallet disconnected
+[00:06:07.717] Browser LOG     Wallet connected successfully!
+[00:06:08.036] Browser LOG     Wallet disconnected
+[00:14:14.815] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:13.295] Browser LOG     Wallet connected successfully!
+[01:15:55.130] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:57.499] Browser LOG     Wallet disconnected

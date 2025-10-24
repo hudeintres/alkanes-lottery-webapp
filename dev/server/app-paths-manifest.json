@@ -1,0 +1,9 @@
+{
+  "/api/jackpot/route": "app/api/jackpot/route.js",
+  "/api/tickets/route": "app/api/tickets/route.js",
+  "/docs/page": "app/docs/page.js",
+  "/jackpot/page": "app/jackpot/page.js",
+  "/liquidity/page": "app/liquidity/page.js",
+  "/page": "app/page.js",
+  "/tickets/page": "app/tickets/page.js"
+}
