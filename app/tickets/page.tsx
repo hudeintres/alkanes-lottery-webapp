@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import { useWallet } from "@/contexts/WalletContext";
+import ClientNavbar from "@/components/ClientNavbar";
+import { useClientWallet } from "@/hooks/useClientWallet";
 
 // Mock ticket data - in real app, this would come from API
 const mockTickets = [
@@ -37,7 +37,7 @@ const mockTickets = [
 ];
 
 export default function TicketsPage() {
-    const { isConnected, address } = useWallet();
+    const { isConnected, address } = useClientWallet();
     const [tickets, setTickets] = useState(mockTickets);
     const [filter, setFilter] = useState("all"); // all, active, completed, winners
     const [loading, setLoading] = useState(false);
@@ -108,7 +108,7 @@ export default function TicketsPage() {
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-            <Navbar />
+            <ClientNavbar />
 
             <main className="pt-16">
                 <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">

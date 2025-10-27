@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import { useWallet } from "@/contexts/WalletContext";
+import ClientNavbar from "@/components/ClientNavbar";
+import { useClientWallet } from "@/hooks/useClientWallet";
 
 export default function LiquidityPage() {
-    const { isConnected, address } = useWallet();
+    const { isConnected, address } = useClientWallet();
     const [depositAmount, setDepositAmount] = useState("");
     const [currentAPY, setCurrentAPY] = useState("12.5");
     const [totalLiquidity, setTotalLiquidity] = useState("150.8");
@@ -109,7 +109,7 @@ export default function LiquidityPage() {
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-            <Navbar />
+            <ClientNavbar />
 
             <main className="pt-16">
                 <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">

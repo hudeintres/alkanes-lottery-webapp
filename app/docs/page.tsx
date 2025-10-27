@@ -1,9 +1,11 @@
-import Navbar from "@/components/Navbar";
+"use client";
+
+import ClientNavbar from "@/components/ClientNavbar";
 
 export default function DocsPage() {
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-            <Navbar />
+            <ClientNavbar />
 
             <main className="pt-16">
                 <div className="mx-auto max-w-4xl px-6 py-12 lg:px-8">

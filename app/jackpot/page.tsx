@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import { useWallet } from "@/contexts/WalletContext";
+import ClientNavbar from "@/components/ClientNavbar";
+import { useClientWallet } from "@/hooks/useClientWallet";
 
 export default function JackpotPage() {
-    const { isConnected, address } = useWallet();
+    const { isConnected, address } = useClientWallet();
     const [jackpotAmount, setJackpotAmount] = useState("25.5");
     const [ticketCount, setTicketCount] = useState(1);
     const [timeUntilDraw, setTimeUntilDraw] = useState("2:45:30");
@@ -60,7 +60,7 @@ export default function JackpotPage() {
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-            <Navbar />
+            <ClientNavbar />
 
             <main className="pt-16">
                 <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">

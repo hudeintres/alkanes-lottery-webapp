@@ -1,9 +1,11 @@
-import Navbar from "@/components/Navbar";
+"use client";
+
+import ClientNavbar from "@/components/ClientNavbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-yellow-50 dark:from-gray-900 dark:via-black dark:to-gray-900">
-      <Navbar />
+      <ClientNavbar />
 
       <main className="pt-16">
         {/* Hero Section */}

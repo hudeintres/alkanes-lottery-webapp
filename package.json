@@ -12,8 +12,7 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "next": "16.0.0",
-    "@omnisat/lasereyes-core": "^0.0.82",
-    "@omnisat/lasereyes-react": "^0.0.77",
+    "@omnisat/lasereyes": "^0.0.156",
     "@oyl/sdk": "github:Oyl-Wallet/oyl-sdk#v2.0.0"
   },
   "devDependencies": {
