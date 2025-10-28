@@ -4,6 +4,8 @@ import { cn } from '@/lib/utils'
 import { ReactNode } from 'react'
 import { Toaster } from 'sonner'
 import localFont from 'next/font/local'
+import Providers from '@/components/Providers'
+import NavBar from '@/components/NavBar'
 
 const windows = localFont({
   src: './Windows_Regular.ttf',
@@ -21,11 +23,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head />
       <body
         className={cn(
-          'min-h-screen flex flex-col items-center justify-center text-white',
+          'min-h-screen flex flex-col items-center justify-start text-white',
           windows.className
         )}
       >
-        {children}
+        <Providers>
+          <NavBar />
+          {children}
+        </Providers>
         <Toaster />
       </body>
     </html>
