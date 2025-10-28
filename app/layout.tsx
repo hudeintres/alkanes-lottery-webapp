@@ -1,37 +1,33 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import ClientProviders from "@/components/ClientProviders";
+import './globals.css'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { cn } from '@/lib/utils'
+import { ReactNode } from 'react'
+import { Toaster } from 'sonner'
+import localFont from 'next/font/local'
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const windows = localFont({
+  src: './Windows_Regular.ttf',
+  variable: '--font-windows',
+})
 
-export const metadata: Metadata = {
-  title: "Bitcoin Lottery - Win Big with BTC",
-  description: "Join the ultimate Bitcoin lottery game. Buy tickets, provide liquidity, and win massive jackpots. Built on Bitcoin with Alkanes smart contracts.",
-};
+const pxplus = localFont({
+  src: './PxPlus_IBM_VGA8.ttf',
+  variable: '--font-pxplus',
+})
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cn(
+          'min-h-screen flex flex-col items-center justify-center text-white',
+          windows.className
+        )}
       >
-        <ClientProviders>
-          {children}
-        </ClientProviders>
+        {children}
+        <Toaster />
       </body>
     </html>
-  );
+  )
 }

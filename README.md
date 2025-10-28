@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![lasereyes_logo](../../lasereyes.png)
 
-## Getting Started
+# LaserEyes Demo
 
-First, run the development server:
+`demo.lasereyes.build` is a demo application designed to showcase the features of `@omnisat/lasereyes` and its integration into a dApp. This app demonstrates how to integrate Bitcoin wallets into a React/Next.js application using the `lasereyes` packages.
+
+## Key Features
+
+- **Wallet Integration**: Demonstrates the use of `@omnisat/lasereyes` and `@omnisat/lasereyes-react` to connect and interact with Bitcoin wallets like UniSat and Xverse.
+- **Next.js Framework**: The app is built with Next.js, providing server-side rendering and optimized performance.
+- **UI Components**: Utilizes Shadcn components for a clean and responsive user interface.
+
+## Installation
+
+To run the demo app locally, first install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `pnpm dev`: Start the development server.
+- `pnpm build`: Build the app for production.
+- `pnpm start`: Start the production server.
+- `pnpm lint`: Run ESLint checks.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Dependencies
 
-## Learn More
+- `@omnisat/lasereyes`: Core wallet integration package.
+- `@omnisat/lasereyes-react`: React hooks and providers for wallet interactions.
+- `@bitcoinerlab/secp256k1`: Library for handling secp256k1 signatures.
+- `Shadcn`: Components for building accessible and responsive UIs.
+- `Tailwind CSS`: Utility-first CSS framework for styling.
+- `Next.js`: Framework for server-rendered React applications.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The demo showcases how to integrate Bitcoin wallet functionality into a Next.js app using `@omnisat/lasereyes`. You can explore different wallet interactions and see the features in action.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+If you’d like to contribute, feel free to open a pull request or submit issues for improvements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This demo is MIT licensed.
