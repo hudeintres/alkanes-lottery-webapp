@@ -8,7 +8,7 @@ import { cn, truncateString } from '@/lib/utils'
 import { useState } from 'react'
 
 export default function NavBar() {
-    const { provider, address } = useLaserEyes()
+    const { provider, address, disconnect } = useLaserEyes()
     const [showWalletModal, setShowWalletModal] = useState(false)
 
     return (
@@ -26,10 +26,14 @@ export default function NavBar() {
                 </div>
                 <div className={'grow'} />
                 {address ? (
-                    <div className={'flex items-center gap-2 text-sm md:text-base'}>
+                    <Button
+                        variant="outline"
+                        className={'bg-[#1e1d1f] border-[#3c393f] hover:bg-[#3c393f] flex items-center gap-2 text-sm md:text-base'}
+                        onClick={() => disconnect()}
+                    >
                         {provider && <WalletIcon walletName={provider} size={20} />}
                         <span className={'text-gray-300'}>{truncateString(address, 16)}</span>
-                    </div>
+                    </Button>
                 ) : (
                     <Button
                         variant="outline"

@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import WalletSelector from '@/components/WalletSelector'
 import { Button } from '@/components/ui/button'
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <WalletSelector />
     </div>
   )
 }
