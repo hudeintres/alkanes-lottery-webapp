@@ -1,4 +1,5 @@
 import './globals.css'
+import '@omnisat/lasereyes-ui/style'
 
 import { cn } from '@/lib/utils'
 import { ReactNode } from 'react'

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useLaserEyes, WalletIcon } from '@omnisat/lasereyes'
-import { ConnectWalletModal } from '@omnisat/lasereyes-ui'
+import { ConnectWalletButton } from '@omnisat/lasereyes-ui'
 import { Button } from '@/components/ui/button'
 import { cn, truncateString } from '@/lib/utils'
 import { useState } from 'react'
@@ -35,19 +35,9 @@ export default function NavBar() {
                         <span className={'text-gray-300'}>{truncateString(address, 16)}</span>
                     </Button>
                 ) : (
-                    <Button
-                        variant="outline"
-                        className={'bg-[#1e1d1f] border-[#3c393f] hover:bg-[#3c393f]'}
-                        onClick={() => setShowWalletModal(true)}
-                    >
-                        Connect Wallet
-                    </Button>
+                    <ConnectWalletButton className={'bg-[#1e1d1f] border-[#3c393f] hover:bg-[#3c393f]'} />
                 )}
             </nav>
-            <ConnectWalletModal
-                open={showWalletModal}
-                onClose={() => setShowWalletModal(false)}
-            />
         </>
     )
 }
